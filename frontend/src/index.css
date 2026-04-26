@@ -1,0 +1,65 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #faf9f6;
+  --bg-secondary: #f3f2ef;
+  --bg-tertiary: #eceae5;
+  --border: rgba(0,0,0,0.08);
+  --border-hover: rgba(0,0,0,0.14);
+  --text-primary: #1a1917;
+  --text-secondary: #6b6860;
+  --text-tertiary: #a8a49e;
+  --accent: #1a6b4a;
+  --accent-light: #e8f3ee;
+  --accent-hover: #145a3d;
+  --danger: #8b2635;
+  --danger-light: #f9eaec;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.04);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.06);
+  --sidebar-w: 256px;
+  --radius: 10px;
+  --radius-sm: 7px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #1c1b19;
+  --bg-secondary: #242320;
+  --bg-tertiary: #2e2c29;
+  --border: rgba(255,255,255,0.07);
+  --border-hover: rgba(255,255,255,0.13);
+  --text-primary: #edeae4;
+  --text-secondary: #8c897f;
+  --text-tertiary: #5a574f;
+  --accent: #2d9b6a;
+  --accent-light: #0e2d1f;
+  --accent-hover: #34b37a;
+  --danger: #c0404f;
+  --danger-light: #2d1215;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2), 0 1px 6px rgba(0,0,0,0.2);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: 'Satoshi', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+h1, h2, h3 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 4px; }
+
+* { transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease), color 0.15s var(--ease); }
+button, input { font-family: 'Satoshi', sans-serif; }
