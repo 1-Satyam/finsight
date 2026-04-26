@@ -43,25 +43,6 @@ PDF Upload → pdfplumber Parser → Structure-Aware Chunker
 
 ---
 
-## Project Structure
-
-finsight/
-├── backend/
-│   ├── main.py               # FastAPI app entry
-│   ├── config.py             # Centralized settings via pydantic-settings
-│   ├── routes/               # upload, query, documents, health
-│   ├── services/             # pipeline, embeddings, retriever, llm
-│   ├── utils/                # pdf_parser, chunker, metadata, logger
-│   ├── db/                   # ChromaDB vector store
-│   ├── eval/                 # RAG vs zero-shot benchmark
-│   └── storage/              # uploaded PDFs + extraction cache
-└── frontend/
-└── src/
-├── App.tsx           # Sidebar layout + theme toggle
-└── components/       # Upload, Chat, Documents
-
----
-
 ## Setup
 
 ### Local Development
