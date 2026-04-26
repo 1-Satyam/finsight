@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+venv/
+backend/db/chroma/
+backend/storage/documents/*
+backend/storage/extractions/*
+!backend/storage/documents/.gitkeep
+!backend/storage/extractions/.gitkeep
+frontend/node_modules/
+frontend/build/
